@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="classes" name="Default test(failed)">
+    <classes>
+      <class name="testCases.LoginPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="verifyLoginWithInValidCredentialsInValidUserNameAndInValidPassword"/>
+          <include name="verifyLoginWithInValidCredentialsInValidUserNameAndValidPassword"/>
+          <include name="terDown"/>
+          <include name="verifyLoginWithInValidCredentialsInValidUserNameSapceAndInValidPasswordSpace"/>
+          <include name="verifyLoginWithInValidCredentialsValidUserNameAndInvalidPassword"/>
+        </methods>
+      </class> <!-- testCases.LoginPageTest -->
+      <class name="testCases.RegisterPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="terDown"/>
+          <include name="registerNewUser" invocation-numbers="0 1 2"/>
+        </methods>
+      </class> <!-- testCases.RegisterPageTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
