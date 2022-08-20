@@ -72,4 +72,8 @@ public class BasePage {
 	}
 	return path;
 	}
+	
+	public static void test() {
+		System.out.println("This is test method");
+	}
 }
